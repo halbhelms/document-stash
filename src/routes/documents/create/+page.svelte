@@ -3,6 +3,7 @@
   import Editor from '@tinymce/tinymce-svelte'
   let conf = {
     plugins: 'table',
+    height: 700,
     toolbar: 'h1 h2 h3 hr | undo redo | styles | bold italic strikethrough | alignleft aligncenter alignright alignjustify | outdent indent | table | copy cut paste | fontfamily fontsize | print'
   }
   // import { tinymce } from '@tinymce/tinymce-svelte';
@@ -12,7 +13,7 @@
 </script>
 
 <h2>Creator for Document</h2>
-
+<!-- We need an input box for the author name and one for the title of the doc -->
 <Editor 
   apiKey="193d7ugpni1u1hgvxyhhyvm4bi8wtimmni33gnyxrfcrl815" 
   bind:value = {editorContents}

@@ -2,6 +2,7 @@
   export let documents
 </script>
 
+<!-- Need links on these -->
 {#each documents as document}
   <h3>{document.title}</h3>
 {/each}
