@@ -40,6 +40,6 @@
     padding-left: 12px;
     padding-top: 20px;
     font-family: 'Lato', sans-serif;
-    font-size: 1.5rem;
+    font-size: 1rem;
   }
 </style>
