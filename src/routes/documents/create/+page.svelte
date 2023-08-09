@@ -1,8 +1,10 @@
 <script>
+  import SearchableSelect from '$lib/components/SearchableSelect.svelte'
+
   export let data
-  const {addNewDocument} = data
+  const { addNewDocument } = data
   let docContents = {
-    editorContents: "",
+    contents: "",
     title: "",
     author: ""
   }
@@ -12,7 +14,7 @@
     height: 500,
     toolbar: 'h1 h2 h3 hr | undo redo | styles | bold italic strikethrough | alignleft aligncenter alignright alignjustify | outdent indent | table | copy cut paste | fontfamily fontsize | print'
   }
-  function saveDocument(event){
+  function saveDocument(){
     addNewDocument(docContents)
   }
 </script>
@@ -32,12 +34,14 @@
     <input id="title" placeholder="document title here" bind:value = {docContents.title}/>
   </p>
 
+  <SearchableSelect {docContents}/>
+
 </div>
   
 
 <Editor 
   apiKey="193d7ugpni1u1hgvxyhhyvm4bi8wtimmni33gnyxrfcrl815" 
-  bind:value = {docContents.editorContents}
+  bind:value = {docContents.contents}
   {conf}
 />
 
