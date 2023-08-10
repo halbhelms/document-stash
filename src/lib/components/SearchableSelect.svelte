@@ -25,27 +25,36 @@
   }
 </script>
 
+<div class="access-options">
+<!-- {selectedOption} {selectedOptionName} -->
+</div>
+<div class="custom-select-wrapper">
+    <input type="text" bind:value={searchTerm} placeholder="Search for Licensor">
+    <div class="select-options {searchTerm ? 'show' : ''}">
+      {#each filteredOptions as option (option.value)}
+        <div class="options-div" on:click={() => selectOption(option)}>{option.label}</div>
+      {/each}
+    </div>
+</div>
+
 <style>
+  .custom-select-wrapper {
+    margin-left: -60px;
+  }
+
+  .options-div {
+    font-size: 1.2rem;
+    margin-top: 4px;
+  }
+
   .select-options {
     display: none;
   }
 
   .select-options.show {
     display: block;
+
   }
 </style>
-
-<div class="access-options">
-{selectedOption} {selectedOptionName}
-</div>
-<div class="custom-select-wrapper">
-    <input type="text" bind:value={searchTerm} placeholder="Search for Licensor">
-    <div class="select-options {searchTerm ? 'show' : ''}">
-      {#each filteredOptions as option (option.value)}
-        <div on:click={() => selectOption(option)}>{option.label}</div>
-      {/each}
-    </div>
-</div>
-
 <!-- To use this component in another Svelte file -->
 <!-- <SearchableSelect /> -->

@@ -1,5 +1,5 @@
 <script>
-  import SearchableSelect from '$lib/components/SearchableSelect.svelte'
+  import DocumentPermissions from '$lib/components/DocumentPermissions.svelte'
 
   export let data
   const { addNewDocument } = data
@@ -34,7 +34,7 @@
     <input id="title" placeholder="document title here" bind:value = {docContents.title}/>
   </p>
 
-  <SearchableSelect {docContents}/>
+  <DocumentPermissions/>
 
 </div>
   
