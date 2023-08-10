@@ -49,6 +49,13 @@
       "author": "Hatem Jaber",
       "restrict_to": null,
       "id": 6
+    },
+    {
+      "contents": "<p>This is my seventh&nbsp;<strong>document,&nbsp;</strong><em>baby</em></p>",
+      "title": "My Seventh document",
+      "author": "Alyssa Cordero",
+      "restrict_to": null,
+      "id": 7
     }
   ]
 }
