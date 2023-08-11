@@ -57,5 +57,235 @@
       "restrict_to": null,
       "id": 7
     }
+  ],
+  "licensors": [
+    {
+      "name": "Abercrombie & Fitch",
+      "licensorId": 1
+    },
+    {
+      "name": "Blue October",
+      "licensorId": 2
+    },
+    {
+      "name": "Cascade Feeders",
+      "licensorId": 3
+    },
+    {
+      "name": "Epic Rights",
+      "licensorId": 4
+    },
+    {
+      "name": "Eric Church",
+      "licensorId": 5
+    },
+    {
+      "name": "Eric Emanuel",
+      "licensorId": 6
+    },
+    {
+      "name": "Exurbia Films",
+      "licensorId": 7
+    },
+    {
+      "name": "Fanatics Collectibles",
+      "licensorId": 8
+    },
+    {
+      "name": "Fly South Music",
+      "licensorId": 9
+    },
+    {
+      "name": "Genius Brands",
+      "licensorId": 10
+    },
+    {
+      "name": "Greenlight Rights",
+      "licensorId": 11
+    },
+    {
+      "name": "IMGCL",
+      "licensorId": 12
+    },
+    {
+      "name": "Indiana University",
+      "licensorId": 13
+    },
+    {
+      "name": "Iowa State University",
+      "licensorId": 14
+    },
+    {
+      "name": "Karl Jacobs",
+      "licensorId": 15
+    },
+    {
+      "name": "Killer Merch",
+      "licensorId": 16
+    },
+    {
+      "name": "LankyBox",
+      "licensorId": 17
+    },
+    {
+      "name": "Legendary",
+      "licensorId": 18
+    },
+    {
+      "name": "Marvel",
+      "licensorId": 19
+    },
+    {
+      "name": "Merch Traffic",
+      "licensorId": 20
+    },
+    {
+      "name": "Mississippi State University",
+      "licensorId": 21
+    },
+    {
+      "name": "MLBPA",
+      "licensorId": 22
+    },
+    {
+      "name": "Moriah Elizabeth",
+      "licensorId": 23
+    },
+    {
+      "name": "MrBeast",
+      "licensorId": 24
+    },
+    {
+      "name": "MrBrainwash",
+      "licensorId": 25
+    },
+    {
+      "name": "NC State",
+      "licensorId": 26
+    },
+    {
+      "name": "Noah Kahan",
+      "licensorId": 27
+    },
+    {
+      "name": "Odesza",
+      "licensorId": 28
+    },
+    {
+      "name": "Ohio State University",
+      "licensorId": 29
+    },
+    {
+      "name": "Paramount Pictures",
+      "licensorId": 30
+    },
+    {
+      "name": "Penn State",
+      "licensorId": 31
+    },
+    {
+      "name": "Quantumpfs",
+      "licensorId": 32
+    },
+    {
+      "name": "Red Bull",
+      "licensorId": 33
+    },
+    {
+      "name": "Sesame Street",
+      "licensorId": 34
+    },
+    {
+      "name": "Smiley",
+      "licensorId": 35
+    },
+    {
+      "name": "Sony Music",
+      "licensorId": 36
+    },
+    {
+      "name": "Strawberry Shortcake",
+      "licensorId": 37
+    },
+    {
+      "name": "Teletubbies",
+      "licensorId": 38
+    },
+    {
+      "name": "Three Ten Merch",
+      "licensorId": 39
+    },
+    {
+      "name": "Toei Animation",
+      "licensorId": 40
+    },
+    {
+      "name": "Tom Petty",
+      "licensorId": 41
+    },
+    {
+      "name": "Trends International",
+      "licensorId": 42
+    },
+    {
+      "name": "UCONN",
+      "licensorId": 43
+    },
+    {
+      "name": "Universal Music Group",
+      "licensorId": 44
+    },
+    {
+      "name": "University of Colorado",
+      "licensorId": 45
+    },
+    {
+      "name": "University of Georgia",
+      "licensorId": 46
+    },
+    {
+      "name": "University of Iowa",
+      "licensorId": 47
+    },
+    {
+      "name": "University of Nebraska, Lincoln",
+      "licensorId": 48
+    },
+    {
+      "name": "University of Notre Dame",
+      "licensorId": 49
+    },
+    {
+      "name": "University of Oregon",
+      "licensorId": 50
+    },
+    {
+      "name": "Upper Deck",
+      "licensorId": 51
+    },
+    {
+      "name": "USC",
+      "licensorId": 52
+    },
+    {
+      "name": "Viz Media",
+      "licensorId": 53
+    },
+    {
+      "name": "Warner Media",
+      "licensorId": 54
+    },
+    {
+      "name": "Warner Music Group",
+      "licensorId": 55
+    },
+    {
+      "name": "WildBrain/Peanuts",
+      "licensorId": 56
+    },
+    {
+      "name": "WWE",
+      "licensorId": 57
+    }
   ]
 }
