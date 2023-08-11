@@ -1,19 +1,27 @@
 <script>
-  import DocumentPermissions from '$lib/components/DocumentPermissions.svelte'
+  import DocumentInfo from '$lib/components/DocumentInfo.svelte'
 
   export let data
   const { addNewDocument } = data
+  const { licensors } = data
+
+  // create a new document
   let docContents = {
     contents: "",
     title: "",
-    author: ""
+    author: "",
+    restrict_to: "-500"
   }
+
+  // import/use the TinyMCE Editor
   import Editor from '@tinymce/tinymce-svelte'
   let conf = {
     plugins: 'table',
     height: 500,
     toolbar: 'h1 h2 h3 hr | undo redo | styles | bold italic strikethrough | alignleft aligncenter alignright alignjustify | outdent indent | table | copy cut paste | fontfamily fontsize | print'
   }
+
+  // save the newly create document
   function saveDocument(){
     addNewDocument(docContents)
   }
@@ -34,11 +42,10 @@
     <input id="title" placeholder="document title here" bind:value = {docContents.title}/>
   </p>
 
-  <DocumentPermissions/>
+  <DocumentInfo document={docContents} {licensors}/>
 
 </div>
   
-
 <Editor 
   apiKey="193d7ugpni1u1hgvxyhhyvm4bi8wtimmni33gnyxrfcrl815" 
   bind:value = {docContents.contents}

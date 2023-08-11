@@ -1,9 +1,11 @@
 import data from "$lib/data/db.json"
 
-
 export const load = async ({ fetch, params  }) => {
+    // Get all licensors
+    const licensors = fetch('http://localhost:4000/licensors')
     return {
-        addNewDocument: addNewDocument
+        addNewDocument: addNewDocument,
+        licensors
     }
   }
 // create a function that will expect a new document obj, that will add to db.json
