@@ -2,8 +2,10 @@
   import DocumentInfo from '$lib/components/DocumentInfo.svelte'
 
   export let data
-  const { addNewDocument } = data
-  const { licensors } = data
+  const { docs } = data
+  console.log(docs)
+  // const { addNewDocument } = data
+  // const { licensors } = data
 
   // create a new document
   let docContents = {
@@ -42,7 +44,7 @@
     <input id="title" placeholder="document title here" bind:value = {docContents.title}/>
   </p>
 
-  <DocumentInfo document={docContents} {licensors}/>
+  <!-- <DocumentInfo document={docContents} {licensors}/> -->
 
 </div>
   

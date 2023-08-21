@@ -1,0 +1,9 @@
+CREATE TABLE documents(
+  id INTEGER PRIMARY KEY,
+  title VARCHAR(255) NOT NULL,
+  author VARCHAR(100),
+  contents TEXT NOT NULL,
+  restrict_to INTEGER DEFAULT -500,
+  created_at TEXT DEFAULT CURRENT_DATE,
+  updated_at TEXT DEFAULT CURRENT_DATE
+)

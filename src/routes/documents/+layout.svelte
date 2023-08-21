@@ -1,12 +1,12 @@
 <script>
   import DocumentNavigation from '$lib/components/DocumentNavigation.svelte'
 
-  export let data
-  const { filteredDocs } = data
+  // export let data
+  // const { filteredDocs } = data
 </script>
 
 <main>
-  <div id="nav"><DocumentNavigation documents={filteredDocs} /></div>
+  <!-- <div id="nav"><DocumentNavigation documents={filteredDocs} /></div> -->
   <div id="working"><slot /></div>
 </main>
 
