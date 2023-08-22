@@ -18,10 +18,10 @@
   );
 
   function selectOption(option) {
-    searchTerm = option.label;  // Show the selected option in the input
-    setTimeout(() => { searchTerm = ''; }, 10);  // Hide dropdown after a tiny delay
+    searchTerm = option.label; // Set the input value to the selected option label
+    // Populate the text box with the selected option's label
     selectedOption = option.value;
-    selectedOptionName = option.label
+    selectedOptionName = option.label;
   }
 </script>
 
@@ -32,7 +32,9 @@
     <input type="text" bind:value={searchTerm} placeholder="Search for Licensor">
     <div class="select-options {searchTerm ? 'show' : ''}">
       {#each filteredOptions as option (option.value)}
-        <div class="options-div" on:click={() => selectOption(option)}>{option.label}</div>
+        <div class="options-div" on:click={() => { searchTerm = option.label; selectOption(option); }}>
+          {option.label}
+        </div>
       {/each}
     </div>
 </div>
