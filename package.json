@@ -21,7 +21,7 @@
 	"type": "module",
 	"dependencies": {
 		"@tinymce/tinymce-svelte": "^1.0.1",
-		"better-sqlite3": "^8.5.0",
+		"better-sqlite3": "^8.5.1",
 		"json-server": "^0.17.3"
 	}
 }

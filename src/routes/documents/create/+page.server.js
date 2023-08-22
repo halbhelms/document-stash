@@ -1,20 +1,15 @@
-// import our db from better-sqlite3 (automatically assumes index.js)
-import { db } from "$lib/server/db"
+import { models } from "$lib/server/db/index.js"
 
-const addUser = () => {
-   db.prepare(
-    'INSERT INTO documents(title, author, contents) VALUES(@title, @author, @contents)'
-    ).run(
-      {title: "My first document", author: "Hal Helms", contents: "This truly is my <strong>first document</strong>"}
-    )
-}
-
-const allDocs = () => {
-  const documents = db.prepare("SELECT * FROM documents").all()
-  return documents
-}
-
-export const load = async () => {
-  // addUser()
-  return {docs: allDocs()}
+export const actions = {
+  default: async({ request }) => {
+    const data = await request.formData()
+    const title = data.get('title')
+    const author = data.get('author')
+    const contents = data.get('contents')
+    const restrict_to = data.get('restrict_to')
+    models.Document.add(title, author, contents, restrict_to)
+    return{
+      message: `Document ${title} successfully added.`
+    }
+  }
 }

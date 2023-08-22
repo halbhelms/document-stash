@@ -1,17 +1,16 @@
 <script>
   import DocumentInfo from '$lib/components/DocumentInfo.svelte'
 
+  export let form
   export let data
   const { docs } = data
-  console.log(docs)
-  // const { addNewDocument } = data
-  // const { licensors } = data
-
+  
   // create a new document
-  let docContents = {
-    contents: "",
+  // automatically restricted to Counterfind only
+  let newDoc = {
     title: "",
     author: "",
+    contents: "",
     restrict_to: "-500"
   }
 
@@ -23,10 +22,6 @@
     toolbar: 'h1 h2 h3 hr | undo redo | styles | bold italic strikethrough | alignleft aligncenter alignright alignjustify | outdent indent | table | copy cut paste | fontfamily fontsize | print'
   }
 
-  // save the newly create document
-  function saveDocument(){
-    addNewDocument(docContents)
-  }
 </script>
 
 <h2>Creator for Document</h2>
